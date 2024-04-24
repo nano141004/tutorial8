@@ -7,4 +7,5 @@
     "guest" pertama adalah username
     "guest" kedua adalah password
     "localhost:5672" adalah alamat server dan nomor port untuk server AMQP
-
+- [ss1](images/ss1.png)
+queue messages mencapai 60an karena dilakukan cargo run pada publisher berkali - kali secara cepat, sehingga subscriber tidak bisa memproses keseluruhan request dalam satu waktu, maka request harus menunggu untuk diproses atau harus masuk queue dulu.
