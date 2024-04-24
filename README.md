@@ -8,13 +8,11 @@ AMQP adalah singkatan dari Advanced Message Queuing Protocol, sebuah protokol ko
 "guest" kedua adalah password
 "localhost:5672" adalah alamat server dan nomor port untuk server AMQP
 
-[ss1](images/ss1.png)
-
+![ss1](images/ss1.png)
 queue messages mencapai 60an karena dilakukan cargo run pada publisher berkali - kali secara cepat, sehingga subscriber tidak bisa memproses keseluruhan request dalam satu waktu, maka request harus menunggu untuk diproses atau harus masuk queue dulu.
 
 
-[ss2](images/ss2.png)
-
+![ss2](images/ss2.png)
 Setelah dijalankan 3 subscriber dalam satu waktu, kemudian publisher juga dijalankan berkali - kali secara cepat, spike yang terjadi menjadi lebih cepat turun, dan juga tidak mencapai jumlah queue sebanyak hanyak menggunakan 1 subscriber saja.
 
 
